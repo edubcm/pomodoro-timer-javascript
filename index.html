@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dosis:wght@200;400;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Pomodoro Timer</h1>
+      <p>Useful to keep you focused</p>
+      <div class="timer"></div>
+      <p class="state"></p>
+      <div class="forms">
+        <h2>Minutes to Work</h2>
+        <div class="minutesW">
+          <form method="get" id="minutesWork">
+            <select name="minutesW" id="minutesW">
+              <option value="01:00">01:00 (Test)</option>
+              <option value="15:00">15:00</option>
+              <option value="25:00">25:00</option>
+              <option value="45:00">45:00</option>
+              <option value="60:00">60:00</option>
+            </select>
+          </form>
+        </div>
+
+        <h3>Minutes to Rest</h3>
+        <div class="minutesR">
+          <form method="get" id="minutesRest">
+            <select name="minutesR" id="minutesR">
+              <option value="01:00">01:00 (Test)</option>
+              <option value="05:00">05:00</option>
+              <option value="10:00">10:00</option>
+              <option value="15:00">15:00</option>
+              <option value="20:00">20:00</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="sendButton">
+        <button class="send" type="submit" id="submit" onclick="sendData()">
+          SET
+        </button>
+      </div>
+    </section>
+    <footer>
+      Developed by Eduardo Barbosa -
+      <a href="https://www.github.com/edubcm" target="_blank">GitHub</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

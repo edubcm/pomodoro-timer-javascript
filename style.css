@@ -1,0 +1,202 @@
+*{
+  text-decoration: none;
+  box-sizing: border-box;
+    
+}
+
+body{
+  background: rgb(41, 41, 41);
+  transition: 0.3s
+}
+
+h1{
+  font-size: 3rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+p{
+  font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
+
+.timer{
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.state{
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+h2, h3{
+  font-size: 2rem;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  
+}
+
+.forms{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: max-content;
+  justify-content: center;
+  
+}
+
+form #minutesW, #minutesR{
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+
+#submit{
+  cursor: pointer;
+  margin-top: 2rem;
+  justify-self: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  width: 45%;
+  
+}
+
+.sendButton{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  
+}
+
+footer{
+  color: white;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  width: 100vw;
+  font-size: 0.8rem;
+}
+
+a{
+  color: rgb(211, 254, 255);
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+  font-style: italic;
+}
+
+@media (min-width: 1200px){
+  .timer{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+  }
+
+  .forms{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .state{
+    font-size: 3rem;
+  }
+
+  h3{
+    position: relative;
+    left: 25.5rem;
+  }
+
+  .minutesW{
+    padding: 0;
+    position: relative;
+    margin: 0;
+    right: 33rem;
+    top: 5rem;
+
+  }
+
+  .minutesW #minutesW{
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  position: relative;
+  width: 250%;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  right: 2rem;
+
+  }
+
+  .minutesR{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 5rem;
+    right: 10rem;
+  }
+
+  .minutesR #minutesR{
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    width: 250%;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    left: 1.5rem;
+  
+    }
+
+  footer{
+    color: white;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    font-size: 2rem;
+    
+  }
+  
+  a{
+    font-size: 2rem;
+  }
+}
